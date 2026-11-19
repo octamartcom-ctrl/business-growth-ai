@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Business Growth AI helps founders plan, market, and grow with practical AI-powered business tools.">
+  <meta name="theme-color" content="#09090f">
+  <title>Business Growth AI — Turn ideas into growth</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#09090f;--panel:#11111b;--panel2:#171725;--line:#29283b;--text:#f6f4ff;--muted:#a6a3b8;--purple:#9b7bff;--pink:#d18bff;--green:#6de2b1}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 80% 0%,#251747 0,transparent 35%),var(--bg);color:var(--text);font-family:"DM Sans",sans-serif;line-height:1.55}
+    a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}
+    .nav{height:78px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #ffffff12;position:sticky;top:0;background:#09090fe8;backdrop-filter:blur(16px);z-index:10}
+    .brand{display:flex;align-items:center;gap:11px;font-family:"Space Grotesk";font-weight:700;letter-spacing:-.5px}.mark{width:36px;height:36px;border-radius:12px;background:linear-gradient(135deg,#9b7bff,#d18bff);display:grid;place-items:center;color:#100d1b;font-weight:800}
+    .brand span{color:#c2afff}.links{display:flex;gap:28px;color:var(--muted);font-size:14px}.links a:hover{color:white}.navright{display:flex;align-items:center;gap:12px}
+    .btn{border:1px solid var(--line);background:#ffffff08;color:var(--text);padding:11px 17px;border-radius:12px;font-weight:700;font-size:14px;display:inline-flex;align-items:center;justify-content:center;gap:8px;transition:.2s}
+    .btn:hover{transform:translateY(-2px);border-color:#8e70f5}.primary{background:linear-gradient(110deg,#9270ff,#bd82f5);border:0;color:#100d1b;box-shadow:0 8px 30px #9b7bff35}.primary:hover{filter:brightness(1.08)}
+    .hero{padding:88px 0 72px;display:grid;grid-template-columns:1.03fr .97fr;gap:55px;align-items:center}.eyebrow{display:inline-flex;gap:8px;align-items:center;border:1px solid #9b7bff55;color:#c9baff;background:#9b7bff12;padding:7px 12px;border-radius:99px;font-size:12px;font-weight:700;letter-spacing:.4px}
+    .dot{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 12px var(--green)}h1,h2,h3{font-family:"Space Grotesk";letter-spacing:-1.5px;line-height:1.08}h1{font-size:clamp(43px,6vw,68px);margin:22px 0 18px}h1 em{font-style:normal;background:linear-gradient(100deg,#a58aff,#e0a0ff);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .lead{color:var(--muted);font-size:17px;max-width:530px}.actions{display:flex;gap:12px;margin:28px 0 22px;flex-wrap:wrap}.fine{font-size:12px;color:#858197}.fine b{color:#c9c2df}
+    .preview{background:linear-gradient(145deg,#19172a,#101019);border:1px solid #39324e;border-radius:22px;padding:17px;box-shadow:0 28px 90px #0008;transform:rotate(1deg);position:relative}.preview:before{content:"";position:absolute;inset:-1px;border-radius:22px;background:linear-gradient(135deg,#a58aff66,transparent 40%,#d18bff33);pointer-events:none}
+    .windowbar{display:flex;gap:6px;padding:2px 2px 14px;border-bottom:1px solid #ffffff12}.windowbar i{width:7px;height:7px;border-radius:50%;background:#5b566c}.dash{display:grid;grid-template-columns:130px 1fr;gap:13px;padding-top:15px}.side{background:#0c0c14;border-radius:12px;padding:12px 9px}.side strong{font:700 10px "Space Grotesk";display:block;margin-bottom:16px}.side div{font-size:9px;color:#89859d;padding:8px 6px;border-radius:6px}.side .sel{background:#9b7bff25;color:#d6c9ff}.mainpanel{min-width:0}.hello{font:700 17px "Space Grotesk";margin:4px 0}.sub{font-size:9px;color:#9691a8}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin:13px 0}.stat{background:#ffffff08;border:1px solid #ffffff0c;border-radius:9px;padding:10px}.stat small{display:block;color:#9691a8;font-size:8px}.stat b{font:700 16px "Space Grotesk"}.chart{height:105px;background:#ffffff06;border:1px solid #ffffff0c;border-radius:9px;padding:10px;display:flex;align-items:end;gap:8px}.bar{flex:1;border-radius:4px 4px 0 0;background:linear-gradient(#c39bff,#7957d8);height:var(--h)}.prompt{margin-top:10px;border:1px solid #51416e;background:#201b31;border-radius:9px;padding:10px;color:#cfc6e8;font-size:9px}
+    section{padding:72px 0}.sectionhead{text-align:center;max-width:650px;margin:0 auto 38px}.sectionhead h2{font-size:clamp(30px,4vw,43px);margin:0 0 12px}.sectionhead p{color:var(--muted);margin:0}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.card{background:linear-gradient(145deg,#151521,#101018);border:1px solid var(--line);border-radius:17px;padding:22px}.ico{width:40px;height:40px;border-radius:12px;background:#9b7bff1c;color:#c4adff;display:grid;place-items:center;font-size:19px;margin-bottom:17px}.card h3{font-size:18px;letter-spacing:-.4px;margin:0 0 8px}.card p{font-size:13px;color:var(--muted);margin:0}
+    .how{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.step{padding:22px;border-left:1px solid #51416e}.num{font:700 12px "Space Grotesk";color:#bca8ff}.step h3{font-size:19px;letter-spacing:-.4px;margin:10px 0}.step p{font-size:13px;color:var(--muted);margin:0}
+    .pricing{max-width:480px;margin:auto;background:linear-gradient(145deg,#211a37,#12111c);border:1px solid #8065d4;border-radius:22px;padding:30px;box-shadow:0 20px 70px #6d4bc51c}.price{font:700 48px "Space Grotesk";letter-spacing:-2px;margin:10px 0}.price small{font:500 14px "DM Sans";color:var(--muted);letter-spacing:0}.checks{list-style:none;padding:0;margin:22px 0}.checks li{padding:8px 0;color:#ded9ed;font-size:14px}.checks li:before{content:"✓";color:var(--green);font-weight:800;margin-right:10px}
+    .demo{max-width:760px;margin:auto;background:#12121c;border:1px solid var(--line);border-radius:19px;padding:22px}.demo label{font-size:13px;color:#d8d2e9;font-weight:700;display:block;margin-bottom:9px}.demo textarea{width:100%;min-height:100px;resize:vertical;background:#090910;border:1px solid #353149;color:white;border-radius:11px;padding:13px;font:14px "DM Sans";outline:none}.demo textarea:focus{border-color:var(--purple)}.demo .btn{margin-top:12px}.answer{display:none;margin-top:16px;padding:15px;border-radius:12px;background:#1b1830;border:1px solid #4c3c70;color:#dcd4f1;font-size:14px}.answer.show{display:block}
+    footer{border-top:1px solid #ffffff12;padding:28px 0;color:#88849b;font-size:12px}.foot{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+    .modal{position:fixed;inset:0;background:#000b;display:none;place-items:center;padding:20px;z-index:20}.modal.open{display:grid}.modalbox{width:min(420px,100%);background:#171624;border:1px solid #51416e;border-radius:18px;padding:24px}.modalbox h3{font-size:24px;margin:0 0 8px}.modalbox p{color:var(--muted);font-size:13px}.modalbox input{width:100%;padding:12px;border-radius:9px;border:1px solid var(--line);background:#090910;color:white;margin:7px 0 12px}.close{float:right;background:none;border:0;color:#aaa;font-size:22px}
+    @media(max-width:820px){.hero{grid-template-columns:1fr;gap:38px;padding-top:65px}.preview{max-width:570px;margin:auto;width:100%}.grid{grid-template-columns:repeat(2,1fr)}.links{display:none}}
+    @media(max-width:540px){.wrap{width:min(100% - 28px,1120px)}.nav{height:68px}.navright .btn:first-child{display:none}.hero{padding:55px 0 45px}h1{font-size:44px}.lead{font-size:15px}.grid,.how{grid-template-columns:1fr}section{padding:54px 0}.dash{grid-template-columns:92px 1fr}.side{padding:9px 5px}.stats{gap:4px}.stat{padding:7px}.stat b{font-size:13px}.preview{padding:12px}}
+  </style>
+</head>
+<body>
+  <header class="nav">
+    <div class="wrap" style="display:flex;align-items:center;justify-content:space-between;width:100%">
+      <a class="brand" href="#"><span class="mark">BG</span><span>BusinessGrowth<span>AI</span></span></a>
+      <nav class="links"><a href="#features">Features</a><a href="#how">How it works</a><a href="#pricing">Pricing</a></nav>
+      <div class="navright"><button class="btn" onclick="openModal()">Log in</button><a class="btn primary" href="#pricing">Get started ↗</a></div>
+    </div>
+  </header>
+  <main>
+    <div class="wrap hero">
+      <div>
+        <div class="eyebrow"><span class="dot"></span> YOUR AI BUSINESS GROWTH PARTNER</div>
+        <h1>Turn your business ideas into <em>real growth.</em></h1>
+        <p class="lead">Practical AI-powered guidance for planning, marketing, sales, and smarter business decisions — all in one workspace.</p>
+        <div class="actions"><a class="btn primary" href="#demo">Try the AI demo <span>→</span></a><a class="btn" href="#features">Explore features</a></div>
+        <p class="fine"><b>Built for ambitious founders.</b> Start with a clear plan, then take your next step.</p>
+      </div>
+      <div class="preview" aria-label="Dashboard preview">
+        <div class="windowbar"><i></i><i></i><i></i></div>
+        <div class="dash">
+          <aside class="side"><strong>✦ GROWTH AI</strong><div class="sel">⌂ Overview</div><div>✧ AI Advisor</div><div>◈ Marketing</div><div>⌁ Strategy</div><div>◎ Competitors</div><div>⚙ Settings</div></aside>
+          <div class="mainpanel"><div class="hello">Welcome back 👋</div><div class="sub">Your business workspace at a glance.</div>
+            <div class="stats"><div class="stat"><small>Growth score</small><b>82/100</b></div><div class="stat"><small>Plans created</small><b>12</b></div><div class="stat"><small>Ideas saved</small><b>08</b></div></div>
+            <div class="sub" style="margin-bottom:7px">YOUR GROWTH ACTIVITY</div><div class="chart"><div class="bar" style="--h:28%"></div><div class="bar" style="--h:43%"></div><div class="bar" style="--h:37%"></div><div class="bar" style="--h:65%"></div><div class="bar" style="--h:57%"></div><div class="bar" style="--h:82%"></div><div class="bar" style="--h:95%"></div></div>
+            <div class="prompt">✦ Ask your AI advisor: How can I get my first 100 customers?</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section id="features">
+      <div class="wrap"><div class="sectionhead"><div class="eyebrow">ONE WORKSPACE. MORE CLARITY.</div><h2>Everything you need to move forward</h2><p>From your first idea to your next growth milestone, get structured help for the decisions that matter.</p></div>
+        <div class="grid">
+          <article class="card"><div class="ico">✦</div><h3>AI Business Advisor</h3><p>Ask business questions and get clear, practical next steps for your situation.</p></article>
+          <article class="card"><div class="ico">⌁</div><h3>Growth Strategy</h3><p>Turn your goals into an actionable plan with milestones and priorities.</p></article>
+          <article class="card"><div class="ico">◈</div><h3>Marketing Planner</h3><p>Explore audiences, positioning, content ideas, and campaign plans.</p></article>
+          <article class="card"><div class="ico">◎</div><h3>Competitor Analysis</h3><p>Organize competitor research and identify opportunities to stand out.</p></article>
+          <article class="card"><div class="ico">✧</div><h3>Business Ideas</h3><p>Explore ideas, evaluate demand, and think through possible business models.</p></article>
+          <article class="card"><div class="ico">⚡</div><h3>AI Business Agent</h3><p>A premium workspace for guided business tasks and repeatable workflows.</p></article>
+        </div>
+      </div>
+    </section>
+    <section id="how" style="background:#ffffff04;border-top:1px solid #ffffff0a;border-bottom:1px solid #ffffff0a">
+      <div class="wrap"><div class="sectionhead"><div class="eyebrow">SIMPLE BY DESIGN</div><h2>A clearer path to your next move</h2><p>Keep your business thinking focused and turn advice into action.</p></div>
+        <div class="how"><div class="step"><div class="num">STEP 01</div><h3>Tell us your goal</h3><p>Describe your business, challenge, audience, and what you want to achieve.</p></div><div class="step"><div class="num">STEP 02</div><h3>Get a practical plan</h3><p>Use AI tools to structure your thinking and explore possible next steps.</p></div><div class="step"><div class="num">STEP 03</div><h3>Take action & improve</h3><p>Save your plan, track your progress, and refine your approach over time.</p></div></div>
+      </div>
+    </section>
+    <section id="demo">
+      <div class="wrap"><div class="sectionhead"><div class="eyebrow">INTERACTIVE PREVIEW</div><h2>Ask a business question</h2><p>Try the interface with a sample response. Live AI will be connected during backend setup.</p></div>
+        <div class="demo"><label for="question">What would you like help with?</label><textarea id="question" placeholder="Example: I run a small clothing store. How can I get more customers?"></textarea><button class="btn primary" onclick="demoAnswer()">Generate sample strategy ↗</button><div id="answer" class="answer" aria-live="polite"></div></div>
+      </div>
+    </section>
+    <section id="pricing" style="padding-top:48px">
+      <div class="wrap"><div class="sectionhead"><div class="eyebrow">SIMPLE PREMIUM PLAN</div><h2>Invest in your next step</h2><p>Start with a clear monthly plan. No hidden promises.</p></div>
+        <div class="pricing"><div class="eyebrow">PREMIUM MEMBERSHIP</div><div class="price">Rs. 499 <small>/ month</small></div><p style="color:var(--muted);font-size:14px">More room to plan, explore, and grow with AI-powered business tools.</p>
+          <ul class="checks"><li>100 AI requests per month</li><li>AI Business Advisor</li><li>Growth & marketing strategies</li><li>Competitor analysis tools</li><li>Business ideas generator</li><li>Premium AI Agent access</li></ul>
+          <button class="btn primary" style="width:100%" onclick="openModal()">Join the waitlist</button><p class="fine" style="text-align:center;margin:12px 0 0">Payments and subscriptions will be enabled after secure checkout setup.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer><div class="wrap foot"><a class="brand" href="#"><span class="mark">BG</span><span>BusinessGrowth<span>AI</span></span></a><span>© <span id="year"></span> Business Growth AI. All rights reserved.</span><span>Built to help businesses think bigger.</span></div></footer>
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modalbox"><button class="close" onclick="closeModal()" aria-label="Close">×</button><h3 id="modalTitle">Coming soon</h3><p>Account registration and secure sign-in will be enabled when the backend is connected. This preview does not collect or store your information.</p><button class="btn primary" style="width:100%" onclick="closeModal()">Got it</button></div></div>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    function openModal(){document.getElementById('modal').classList.add('open')}
+    function closeModal(){document.getElementById('modal').classList.remove('open')}
+    document.getElementById('modal').addEventListener('click',e=>{if(e.target.id==='modal')closeModal()});
+    function demoAnswer(){
+      const q=document.getElementById('question').value.trim(), box=document.getElementById('answer');
+      if(!q){box.textContent='Please enter a business question first.';box.classList.add('show');return}
+      box.innerHTML='<strong>Sample growth framework</strong><br><br>1. Define one measurable goal for the next 30 days.<br>2. Identify your best-fit customer and the problem you solve for them.<br>3. Choose one acquisition channel and test a small campaign.<br>4. Track leads, conversions, and customer feedback weekly.<br><br><span style="color:#bca8ff">Your question:</span> '+escapeHtml(q)+'<br><br><em>This is a sample preview, not a live AI-generated answer.</em>';
+      box.classList.add('show');
+    }
+    function escapeHtml(s){return s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+  </script>
+</body>
+</html>
